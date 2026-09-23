@@ -16,3 +16,10 @@
 .kitchen-hero-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:54% center}
 .kitchen-hero-photo figcaption{position:absolute;bottom:0;left:0;right:0;padding:42px 24px 20px;background:linear-gradient(transparent,rgba(22,29,22,.6));color:#fff;font:italic 1.05rem Georgia,serif}
 @media(max-width:900px){.kitchen-hero-photo{aspect-ratio:3/2;max-height:500px}}
+
+/* Article #16: editorial photographs for the seven storage ideas */
+.editorial-pick .idea-visual{margin:0;min-width:0;min-height:0;aspect-ratio:4/5;display:block;background:#d8c9b5}
+.editorial-pick .idea-visual::before{display:none}
+.editorial-pick .idea-visual img{display:block;width:100%;height:100%;object-fit:cover}
+.editorial-pick .idea-visual .visual-label{line-height:1.35}
+@media(max-width:900px){.editorial-pick .idea-visual{aspect-ratio:4/3;max-height:520px}}
