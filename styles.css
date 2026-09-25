@@ -29,3 +29,15 @@
 .editorial-pick .idea-visual:not([class*="visual-"])::before{display:none}
 .editorial-pick .idea-visual:not([class*="visual-"]) img{display:block;width:100%;height:100%;object-fit:cover}
 @media(max-width:900px){.editorial-pick .idea-visual:not([class*="visual-"]){aspect-ratio:4/3;max-height:520px}}
+
+/* Editorial photographs on home guide cards and featured sections */
+.hero-v2 .visual-scene,.featured .visual-scene{isolation:isolate;color:#fff;background:#756b59}
+.hero-v2 .visual-scene::before,.featured .visual-scene::before,.visual-grid .scene::before{display:none}
+.hero-v2 .visual-scene::after,.featured .visual-scene::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(19,28,19,.67),transparent 65%)}
+.visual-scene>img{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover}
+.hero-v2 .visual-scene span,.featured .visual-scene span{color:#fff}
+.visual-grid .scene{background:#ddd0bc;padding:0}
+.visual-grid .scene>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .3s}
+.visual-grid .visual-card:hover .scene>img{transform:scale(1.035)}
+.visual-grid .scene span{z-index:1;align-self:flex-end;margin:0 0 14px 15px;background:rgba(251,249,244,.91);padding:5px 9px;color:var(--ink);letter-spacing:.12em}
+.guide-item .pick-box{margin-top:15px}
